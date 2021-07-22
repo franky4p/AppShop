@@ -109,7 +109,6 @@
 				FAA4359426A81ED6002C1340 /* Main.storyboard */,
 				FAA4359726A81ED8002C1340 /* Assets.xcassets */,
 				FAA4359926A81ED8002C1340 /* LaunchScreen.storyboard */,
-				FAA4359C26A81ED8002C1340 /* Info.plist */,
 			);
 			path = AppShop;
 			sourceTree = "<group>";
@@ -188,6 +187,7 @@
 		FAA435D026A954EC002C1340 /* Environments */ = {
 			isa = PBXGroup;
 			children = (
+				FAA4359C26A81ED8002C1340 /* Info.plist */,
 			);
 			path = Environments;
 			sourceTree = "<group>";
@@ -502,7 +502,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39B93ZXWW7;
-				INFOPLIST_FILE = AppShop/Info.plist;
+				INFOPLIST_FILE = AppShop/Environments/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -521,7 +521,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39B93ZXWW7;
-				INFOPLIST_FILE = AppShop/Info.plist;
+				INFOPLIST_FILE = AppShop/Environments/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
