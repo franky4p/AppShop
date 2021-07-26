@@ -23,6 +23,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print(error.localizedDescription)
             }
         }
+        
+        auth.logout(userId: "123") { response in
+            switch response.result {
+            case .success(let login):
+                print(login)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+        
+        let reg = requestFactory.makeRegistrationRequestFactory()
+        reg.register(userName: "Somebody", password: "mypassword") { response in
+            switch response.result {
+            case .success(let login):
+                print(login)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+        
+        let chgData = requestFactory.makeChageUserDataRequestFactory()
+        chgData.changeUserData(userName: "Somebody", password: "mypassword", email: "vasya@ya.ru", gender: "m") { response in
+            switch response.result {
+            case .success(let login):
+                print(login)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+        
         return true
     }
 
