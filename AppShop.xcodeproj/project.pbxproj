@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA2BD27526B92EC9002C54D5 /* ResponseCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BD27426B92EC9002C54D5 /* ResponseCodableTests.swift */; };
+		FA2BD27726B941E9002C54D5 /* RegistrationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BD27626B941E9002C54D5 /* RegistrationTest.swift */; };
+		FA2BD27926B943D1002C54D5 /* ChageUserDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BD27826B943D1002C54D5 /* ChageUserDataTest.swift */; };
 		FAA4358F26A81ED6002C1340 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4358E26A81ED6002C1340 /* AppDelegate.swift */; };
 		FAA4359126A81ED6002C1340 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4359026A81ED6002C1340 /* SceneDelegate.swift */; };
 		FAA4359826A81ED8002C1340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA4359726A81ED8002C1340 /* Assets.xcassets */; };
@@ -51,6 +54,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA2BD27426B92EC9002C54D5 /* ResponseCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseCodableTests.swift; sourceTree = "<group>"; };
+		FA2BD27626B941E9002C54D5 /* RegistrationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationTest.swift; sourceTree = "<group>"; };
+		FA2BD27826B943D1002C54D5 /* ChageUserDataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChageUserDataTest.swift; sourceTree = "<group>"; };
 		FAA4358B26A81ED6002C1340 /* AppShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA4358E26A81ED6002C1340 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA4359026A81ED6002C1340 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +150,9 @@
 			children = (
 				FAA435A526A81ED8002C1340 /* AppShopTests.swift */,
 				FAA435A726A81ED8002C1340 /* Info.plist */,
+				FA2BD27426B92EC9002C54D5 /* ResponseCodableTests.swift */,
+				FA2BD27626B941E9002C54D5 /* RegistrationTest.swift */,
+				FA2BD27826B943D1002C54D5 /* ChageUserDataTest.swift */,
 			);
 			path = AppShopTests;
 			sourceTree = "<group>";
@@ -417,6 +426,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAA435A626A81ED8002C1340 /* AppShopTests.swift in Sources */,
+				FA2BD27526B92EC9002C54D5 /* ResponseCodableTests.swift in Sources */,
+				FA2BD27726B941E9002C54D5 /* RegistrationTest.swift in Sources */,
+				FA2BD27926B943D1002C54D5 /* ChageUserDataTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
