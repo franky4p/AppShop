@@ -3,14 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		FAA4358F26A81ED6002C1340 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4358E26A81ED6002C1340 /* AppDelegate.swift */; };
 		FAA4359126A81ED6002C1340 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4359026A81ED6002C1340 /* SceneDelegate.swift */; };
-		FAA4359326A81ED6002C1340 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4359226A81ED6002C1340 /* ViewController.swift */; };
-		FAA4359626A81ED6002C1340 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA4359426A81ED6002C1340 /* Main.storyboard */; };
 		FAA4359826A81ED8002C1340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA4359726A81ED8002C1340 /* Assets.xcassets */; };
 		FAA4359B26A81ED8002C1340 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA4359926A81ED8002C1340 /* LaunchScreen.storyboard */; };
 		FAA435A626A81ED8002C1340 /* AppShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA435A526A81ED8002C1340 /* AppShopTests.swift */; };
@@ -38,8 +36,6 @@
 		FAA4358B26A81ED6002C1340 /* AppShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA4358E26A81ED6002C1340 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA4359026A81ED6002C1340 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FAA4359226A81ED6002C1340 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FAA4359526A81ED6002C1340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAA4359726A81ED8002C1340 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAA4359A26A81ED8002C1340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAA4359C26A81ED8002C1340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,13 +95,10 @@
 		FAA4358D26A81ED6002C1340 /* AppShop */ = {
 			isa = PBXGroup;
 			children = (
-				FAA4358E26A81ED6002C1340 /* AppDelegate.swift */,
-				FAA4359026A81ED6002C1340 /* SceneDelegate.swift */,
-				FAA4359226A81ED6002C1340 /* ViewController.swift */,
-				FAA4359426A81ED6002C1340 /* Main.storyboard */,
-				FAA4359726A81ED8002C1340 /* Assets.xcassets */,
-				FAA4359926A81ED8002C1340 /* LaunchScreen.storyboard */,
-				FAA4359C26A81ED8002C1340 /* Info.plist */,
+				FAA435D026A954EC002C1340 /* Environments */,
+				FAA435CF26A954DE002C1340 /* Resources */,
+				FAA435CE26A954CA002C1340 /* Core */,
+				FAA435C926A95461002C1340 /* App */,
 			);
 			path = AppShop;
 			sourceTree = "<group>";
@@ -126,6 +119,71 @@
 				FAA435B226A81ED8002C1340 /* Info.plist */,
 			);
 			path = AppShopUITests;
+			sourceTree = "<group>";
+		};
+		FAA435C926A95461002C1340 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FAA4358E26A81ED6002C1340 /* AppDelegate.swift */,
+				FAA4359026A81ED6002C1340 /* SceneDelegate.swift */,
+				FAA435CD26A954B2002C1340 /* Flows */,
+				FAA435CC26A9549E002C1340 /* Assembly */,
+				FAA435CB26A9548E002C1340 /* Entity */,
+				FAA435CA26A9547E002C1340 /* BusinessLogic */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FAA435CA26A9547E002C1340 /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		FAA435CB26A9548E002C1340 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		FAA435CC26A9549E002C1340 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		FAA435CD26A954B2002C1340 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		FAA435CE26A954CA002C1340 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FAA435CF26A954DE002C1340 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FAA4359926A81ED8002C1340 /* LaunchScreen.storyboard */,
+				FAA4359726A81ED8002C1340 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FAA435D026A954EC002C1340 /* Environments */ = {
+			isa = PBXGroup;
+			children = (
+				FAA4359C26A81ED8002C1340 /* Info.plist */,
+			);
+			path = Environments;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +265,7 @@
 				};
 			};
 			buildConfigurationList = FAA4358626A81ED6002C1340 /* Build configuration list for PBXProject "AppShop" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -233,7 +291,6 @@
 			files = (
 				FAA4359B26A81ED8002C1340 /* LaunchScreen.storyboard in Resources */,
 				FAA4359826A81ED8002C1340 /* Assets.xcassets in Resources */,
-				FAA4359626A81ED6002C1340 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +315,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAA4359326A81ED6002C1340 /* ViewController.swift in Sources */,
 				FAA4358F26A81ED6002C1340 /* AppDelegate.swift in Sources */,
 				FAA4359126A81ED6002C1340 /* SceneDelegate.swift in Sources */,
 			);
@@ -296,14 +352,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FAA4359426A81ED6002C1340 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAA4359526A81ED6002C1340 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FAA4359926A81ED8002C1340 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -438,7 +486,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39B93ZXWW7;
-				INFOPLIST_FILE = AppShop/Info.plist;
+				INFOPLIST_FILE = AppShop/Environments/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +505,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39B93ZXWW7;
-				INFOPLIST_FILE = AppShop/Info.plist;
+				INFOPLIST_FILE = AppShop/Environments/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
