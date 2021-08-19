@@ -9,14 +9,11 @@ import Foundation
 
 struct ProductResult: Codable {
     enum CodingKeys: String, CodingKey {
+        case product = "product"
+        case message = "user_message"
         case result = "result"
-        case name = "product_name"
-        case price = "product_price"
-        case description = "product_description"
     }
-    
+    let product: Product
     let result: Int
-    let name: String
-    let price: Double
-    let description: String
+    let message: String
 }

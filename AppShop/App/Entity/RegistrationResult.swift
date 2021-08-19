@@ -8,6 +8,10 @@
 import Foundation
 
 struct RegistrationResult: Codable {
+    enum CodingKeys: String, CodingKey {
+        case result = "result"
+        case userMessage = "user_message"
+    }
     let result: Int
     let userMessage: String
 }
