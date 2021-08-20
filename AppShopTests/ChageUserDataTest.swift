@@ -30,8 +30,8 @@ class ChageUserDataTest: XCTestCase {
         
         makeChangeUserDataFactory().changeUserData(userName: userName, password: userPassword, email: email, gender: gender) { response in
             switch response.result {
-            case .success(let login):
-                XCTAssertEqual(login.result, 1)
+            case .success(let answer):
+                XCTAssertEqual(answer.result, 1)
                 changeUserData.fulfill()
             case .failure(let error):
                 XCTFail(error.localizedDescription)

@@ -8,5 +8,5 @@
 import Foundation
 
 final class Settings {
-    static let baseUrl: URL = URL(string: "http://127.0.0.1:8080/")!
+    static let baseUrl: URL = URL(string: "https://myappshop1.herokuapp.com/")!
 }

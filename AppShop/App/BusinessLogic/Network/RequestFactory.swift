@@ -47,4 +47,14 @@ class RequestFactory {
         let errorParser = makeErrorParser()
         return GetProduct(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
     }
+    
+    func makeChangeReviewRequestFactory() -> ChageReviewRequestFactory {
+        let errorParser = makeErrorParser()
+        return ChageReview(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
+    }
+    
+    func makeListReviewRequestFactory() -> ListReviewRequestFactory {
+        let errorParser = makeErrorParser()
+        return ListReview(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
+    }
 }

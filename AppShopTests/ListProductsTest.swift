@@ -30,8 +30,8 @@ class ListProductsTest: XCTestCase {
         
         makeListProductsFactory().getListProducts(pageNumber: pageNumber, idCategory: idCategory) { response in
             switch response.result {
-            case .success(let login):
-                XCTAssertEqual(login.pageNumber, 1)
+            case .success(let answer):
+                XCTAssertEqual(answer.pageNumber, 1)
                 products.fulfill()
             case .failure(let error):
                 XCTFail(error.localizedDescription)

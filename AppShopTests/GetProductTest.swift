@@ -27,8 +27,8 @@ class GetProductTest: XCTestCase {
         
         makeProductFactory().getProduct(idProduct: idProduct) { response in
             switch response.result {
-            case .success(let login):
-                XCTAssertEqual(login.result, 1)
+            case .success(let answer):
+                XCTAssertEqual(answer.result, 1)
                 product.fulfill()
             case .failure(let error):
                 XCTFail(error.localizedDescription)
