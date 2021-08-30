@@ -57,4 +57,14 @@ class RequestFactory {
         let errorParser = makeErrorParser()
         return ListReview(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
     }
+    
+    func makeChangeBasketRequestFactory() -> ChangeBasketRequestFactory {
+        let errorParser = makeErrorParser()
+        return ChangeBasket(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
+    }
+    
+    func makePayBasketRequestFactory() -> PayBasketRequestFactory {
+        let errorParser = makeErrorParser()
+        return PayBasket(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue)
+    }
 }
