@@ -21,12 +21,12 @@ class ChageReview: AbstractRequestFactory {
 }
 
 extension ChageReview: ChageReviewRequestFactory {
-    func addReview(userId: Int?, textReview: String, completionHandler: @escaping (AFDataResponse<ChangeReviewResult>) -> Void) {
+    func addReview(userId: Int?, textReview: String, completionHandler: @escaping (AFDataResponse<OperationResult>) -> Void) {
         let requestModel = AddRewiew(baseUrl: baseUrl, userId: userId, textReview: textReview)
         self.request(request: requestModel, completionHandler: completionHandler)
     }
     
-    func delReview(idReview: Int, completionHandler: @escaping (AFDataResponse<ChangeReviewResult>) -> Void) {
+    func delReview(idReview: Int, completionHandler: @escaping (AFDataResponse<OperationResult>) -> Void) {
         let requestModel = DelRewiew(baseUrl: baseUrl, idReview: idReview)
         self.request(request: requestModel, completionHandler: completionHandler)
     }

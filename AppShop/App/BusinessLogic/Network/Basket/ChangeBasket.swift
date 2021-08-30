@@ -22,12 +22,12 @@ class ChangeBasket: AbstractRequestFactory {
 }
 
 extension ChangeBasket: ChangeBasketRequestFactory {
-    func addToBasket(productId: Int, amount: Int, completionHandler: @escaping (AFDataResponse<ChangeBasketResult>) -> Void) {
+    func addToBasket(productId: Int, amount: Int, completionHandler: @escaping (AFDataResponse<OperationResult>) -> Void) {
         let requestModel = ChangeBasketRequest(baseUrl: baseUrl, path: "addToBasket", productId: productId, amount: amount)
         self.request(request: requestModel, completionHandler: completionHandler)
     }
     
-    func delFromBasket(productId: Int, amount: Int, completionHandler: @escaping (AFDataResponse<ChangeBasketResult>) -> Void) {
+    func delFromBasket(productId: Int, amount: Int, completionHandler: @escaping (AFDataResponse<OperationResult>) -> Void) {
         let requestModel = ChangeBasketRequest(baseUrl: baseUrl, path: "delFromBasket", productId: productId, amount: amount)
         self.request(request: requestModel, completionHandler: completionHandler)
     }

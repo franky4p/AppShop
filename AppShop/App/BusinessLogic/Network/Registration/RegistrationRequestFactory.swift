@@ -8,5 +8,5 @@
 import Alamofire
 
 protocol RegistrationRequestFactory {
-    func register(userName: String, password: String, completionHandler: @escaping (AFDataResponse<RegistrationResult>) -> Void)
+    func register(userName: String, password: String, completionHandler: @escaping (AFDataResponse<OperationResult>) -> Void)
 }

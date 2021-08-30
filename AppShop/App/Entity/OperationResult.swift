@@ -1,13 +1,13 @@
 //
-//  RegistrationResult.swift
+//  OperationResult.swift
 //  AppShop
 //
-//  Created by Pavel Khlebnikov on 26.07.2021.
+//  Created by Pavel Khlebnikov on 30.08.2021.
 //
 
 import Foundation
 
-struct RegistrationResult: Codable {
+struct OperationResult: Codable {
     enum CodingKeys: String, CodingKey {
         case result = "result"
         case userMessage = "user_message"

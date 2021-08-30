@@ -22,7 +22,7 @@ class Registration: AbstractRequestFactory {
 }
 
 extension Registration: RegistrationRequestFactory {
-    func register(userName: String, password: String, completionHandler: @escaping (AFDataResponse<RegistrationResult>) -> Void) {
+    func register(userName: String, password: String, completionHandler: @escaping (AFDataResponse<OperationResult>) -> Void) {
         let requestModel = Register(baseUrl: baseUrl, login: userName, password: password)
         self.request(request: requestModel, completionHandler: completionHandler)
     }

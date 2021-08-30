@@ -20,7 +20,6 @@
 		FA2BD28926BABE19002C54D5 /* GetProductTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BD28826BABE19002C54D5 /* GetProductTest.swift */; };
 		FA72F39126CE93B2001C5019 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72F39026CE93B2001C5019 /* Settings.swift */; };
 		FA72F39326CFD13C001C5019 /* ListReviewResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72F39226CFD13C001C5019 /* ListReviewResult.swift */; };
-		FA72F39526CFD215001C5019 /* ChangeReviewResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72F39426CFD215001C5019 /* ChangeReviewResult.swift */; };
 		FA72F39726CFD37B001C5019 /* ChangeReviewRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72F39626CFD37B001C5019 /* ChangeReviewRequestFactory.swift */; };
 		FA72F39926CFD4AE001C5019 /* ChangeReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72F39826CFD4AE001C5019 /* ChangeReview.swift */; };
 		FA72F39B26CFD7A8001C5019 /* ListReviewRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72F39A26CFD7A8001C5019 /* ListReviewRequestFactory.swift */; };
@@ -28,11 +27,10 @@
 		FA72F39F26CFDB66001C5019 /* ChangeReviewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72F39E26CFDB66001C5019 /* ChangeReviewTest.swift */; };
 		FA8AA69226DCD9E7004D9BAD /* ChangeBasketRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AA69126DCD9E7004D9BAD /* ChangeBasketRequestFactory.swift */; };
 		FA8AA69426DCD9FE004D9BAD /* ChangeBasket.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AA69326DCD9FE004D9BAD /* ChangeBasket.swift */; };
-		FA8AA69626DCDB9F004D9BAD /* ChangeBasketResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AA69526DCDB9F004D9BAD /* ChangeBasketResult.swift */; };
 		FA8AA69826DCDFE3004D9BAD /* PayBasket.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AA69726DCDFE3004D9BAD /* PayBasket.swift */; };
 		FA8AA69A26DCE052004D9BAD /* PayBasketRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AA69926DCE052004D9BAD /* PayBasketRequestFactory.swift */; };
-		FA8AA69C26DCE157004D9BAD /* PayBasketResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AA69B26DCE157004D9BAD /* PayBasketResult.swift */; };
 		FA8AA69E26DCE418004D9BAD /* PayBasketTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AA69D26DCE418004D9BAD /* PayBasketTest.swift */; };
+		FA8AA6A026DCE6BB004D9BAD /* OperationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AA69F26DCE6BB004D9BAD /* OperationResult.swift */; };
 		FAA4358F26A81ED6002C1340 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4358E26A81ED6002C1340 /* AppDelegate.swift */; };
 		FAA4359126A81ED6002C1340 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4359026A81ED6002C1340 /* SceneDelegate.swift */; };
 		FAA4359826A81ED8002C1340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA4359726A81ED8002C1340 /* Assets.xcassets */; };
@@ -52,9 +50,6 @@
 		FAEFEDBB26AEC4AC00F6EEBA /* RequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFEDBA26AEC4AC00F6EEBA /* RequestRouter.swift */; };
 		FAEFEDBD26AED2E800F6EEBA /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFEDBC26AED2E800F6EEBA /* Registration.swift */; };
 		FAEFEDBF26AED3D600F6EEBA /* RegistrationRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFEDBE26AED3D600F6EEBA /* RegistrationRequestFactory.swift */; };
-		FAEFEDC326AED8A600F6EEBA /* RegistrationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFEDC226AED8A600F6EEBA /* RegistrationResult.swift */; };
-		FAEFEDC526AEDA0B00F6EEBA /* LogoutResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFEDC426AEDA0B00F6EEBA /* LogoutResult.swift */; };
-		FAEFEDC726AEDE8F00F6EEBA /* ChangeUserDataResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFEDC626AEDE8F00F6EEBA /* ChangeUserDataResult.swift */; };
 		FAEFEDC926AEDF3600F6EEBA /* ChangeUserDataRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFEDC826AEDF3600F6EEBA /* ChangeUserDataRequestFactory.swift */; };
 		FAEFEDCB26AEE02200F6EEBA /* ChangeUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEFEDCA26AEE02200F6EEBA /* ChangeUserData.swift */; };
 /* End PBXBuildFile section */
@@ -90,7 +85,6 @@
 		FA2BD28826BABE19002C54D5 /* GetProductTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductTest.swift; sourceTree = "<group>"; };
 		FA72F39026CE93B2001C5019 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		FA72F39226CFD13C001C5019 /* ListReviewResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReviewResult.swift; sourceTree = "<group>"; };
-		FA72F39426CFD215001C5019 /* ChangeReviewResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeReviewResult.swift; sourceTree = "<group>"; };
 		FA72F39626CFD37B001C5019 /* ChangeReviewRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeReviewRequestFactory.swift; sourceTree = "<group>"; };
 		FA72F39826CFD4AE001C5019 /* ChangeReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeReview.swift; sourceTree = "<group>"; };
 		FA72F39A26CFD7A8001C5019 /* ListReviewRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReviewRequestFactory.swift; sourceTree = "<group>"; };
@@ -98,11 +92,10 @@
 		FA72F39E26CFDB66001C5019 /* ChangeReviewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeReviewTest.swift; sourceTree = "<group>"; };
 		FA8AA69126DCD9E7004D9BAD /* ChangeBasketRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeBasketRequestFactory.swift; sourceTree = "<group>"; };
 		FA8AA69326DCD9FE004D9BAD /* ChangeBasket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeBasket.swift; sourceTree = "<group>"; };
-		FA8AA69526DCDB9F004D9BAD /* ChangeBasketResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeBasketResult.swift; sourceTree = "<group>"; };
 		FA8AA69726DCDFE3004D9BAD /* PayBasket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayBasket.swift; sourceTree = "<group>"; };
 		FA8AA69926DCE052004D9BAD /* PayBasketRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayBasketRequestFactory.swift; sourceTree = "<group>"; };
-		FA8AA69B26DCE157004D9BAD /* PayBasketResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayBasketResult.swift; sourceTree = "<group>"; };
 		FA8AA69D26DCE418004D9BAD /* PayBasketTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayBasketTest.swift; sourceTree = "<group>"; };
+		FA8AA69F26DCE6BB004D9BAD /* OperationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationResult.swift; sourceTree = "<group>"; };
 		FAA4358B26A81ED6002C1340 /* AppShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA4358E26A81ED6002C1340 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA4359026A81ED6002C1340 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,9 +120,6 @@
 		FAEFEDBA26AEC4AC00F6EEBA /* RequestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRouter.swift; sourceTree = "<group>"; };
 		FAEFEDBC26AED2E800F6EEBA /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
 		FAEFEDBE26AED3D600F6EEBA /* RegistrationRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationRequestFactory.swift; sourceTree = "<group>"; };
-		FAEFEDC226AED8A600F6EEBA /* RegistrationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationResult.swift; sourceTree = "<group>"; };
-		FAEFEDC426AEDA0B00F6EEBA /* LogoutResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutResult.swift; sourceTree = "<group>"; };
-		FAEFEDC626AEDE8F00F6EEBA /* ChangeUserDataResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserDataResult.swift; sourceTree = "<group>"; };
 		FAEFEDC826AEDF3600F6EEBA /* ChangeUserDataRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserDataRequestFactory.swift; sourceTree = "<group>"; };
 		FAEFEDCA26AEE02200F6EEBA /* ChangeUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -303,14 +293,9 @@
 			children = (
 				FAEFEDAE26AEC3E500F6EEBA /* LoginResult.swift */,
 				FAEFEDB026AEC3F700F6EEBA /* User.swift */,
-				FAEFEDC226AED8A600F6EEBA /* RegistrationResult.swift */,
-				FAEFEDC426AEDA0B00F6EEBA /* LogoutResult.swift */,
-				FAEFEDC626AEDE8F00F6EEBA /* ChangeUserDataResult.swift */,
 				FA2BD27A26B949F9002C54D5 /* ListProductsResult.swift */,
 				FA72F39226CFD13C001C5019 /* ListReviewResult.swift */,
-				FA72F39426CFD215001C5019 /* ChangeReviewResult.swift */,
-				FA8AA69526DCDB9F004D9BAD /* ChangeBasketResult.swift */,
-				FA8AA69B26DCE157004D9BAD /* PayBasketResult.swift */,
+				FA8AA69F26DCE6BB004D9BAD /* OperationResult.swift */,
 				FA2BD28226BABA68002C54D5 /* ProductResult.swift */,
 			);
 			path = Entity;
@@ -528,30 +513,25 @@
 				FAA4358F26A81ED6002C1340 /* AppDelegate.swift in Sources */,
 				FA2BD27B26B949F9002C54D5 /* ListProductsResult.swift in Sources */,
 				FA2BD28326BABA68002C54D5 /* ProductResult.swift in Sources */,
-				FA72F39526CFD215001C5019 /* ChangeReviewResult.swift in Sources */,
 				FA72F39326CFD13C001C5019 /* ListReviewResult.swift in Sources */,
 				FA72F39B26CFD7A8001C5019 /* ListReviewRequestFactory.swift in Sources */,
 				FAEFEDAC26AEC37F00F6EEBA /* RequestFactory.swift in Sources */,
 				FAA4359126A81ED6002C1340 /* SceneDelegate.swift in Sources */,
-				FAEFEDC526AEDA0B00F6EEBA /* LogoutResult.swift in Sources */,
-				FAEFEDC326AED8A600F6EEBA /* RegistrationResult.swift in Sources */,
 				FA8AA69A26DCE052004D9BAD /* PayBasketRequestFactory.swift in Sources */,
 				FAEFEDBD26AED2E800F6EEBA /* Registration.swift in Sources */,
 				FA72F39926CFD4AE001C5019 /* ChangeReview.swift in Sources */,
 				FA2BD27D26B94BE8002C54D5 /* ListProducts.swift in Sources */,
 				FA72F39726CFD37B001C5019 /* ChangeReviewRequestFactory.swift in Sources */,
 				FAEFEDB526AEC43100F6EEBA /* ErrorParser.swift in Sources */,
-				FA8AA69626DCDB9F004D9BAD /* ChangeBasketResult.swift in Sources */,
+				FA8AA6A026DCE6BB004D9BAD /* OperationResult.swift in Sources */,
 				FAEFEDA826AEC34900F6EEBA /* AuthRequestFactory.swift in Sources */,
 				FA8AA69826DCDFE3004D9BAD /* PayBasket.swift in Sources */,
 				FA2BD27F26B94C43002C54D5 /* ListProductsRequestFactory.swift in Sources */,
-				FA8AA69C26DCE157004D9BAD /* PayBasketResult.swift in Sources */,
 				FAEFEDC926AEDF3600F6EEBA /* ChangeUserDataRequestFactory.swift in Sources */,
 				FA72F39D26CFD872001C5019 /* ListReview.swift in Sources */,
 				FAEFEDBB26AEC4AC00F6EEBA /* RequestRouter.swift in Sources */,
 				FAEFEDAA26AEC36300F6EEBA /* Auth.swift in Sources */,
 				FAEFEDB126AEC3F700F6EEBA /* User.swift in Sources */,
-				FAEFEDC726AEDE8F00F6EEBA /* ChangeUserDataResult.swift in Sources */,
 				FAEFEDBF26AED3D600F6EEBA /* RegistrationRequestFactory.swift in Sources */,
 				FAEFEDB326AEC41E00F6EEBA /* AbstractErrorParser.swift in Sources */,
 			);

@@ -8,6 +8,6 @@
 import Alamofire
 
 protocol ChageReviewRequestFactory {
-    func addReview(userId: Int?, textReview: String, completionHandler: @escaping (AFDataResponse<ChangeReviewResult>) -> Void)
-    func delReview(idReview: Int, completionHandler: @escaping (AFDataResponse<ChangeReviewResult>) -> Void)
+    func addReview(userId: Int?, textReview: String, completionHandler: @escaping (AFDataResponse<OperationResult>) -> Void)
+    func delReview(idReview: Int, completionHandler: @escaping (AFDataResponse<OperationResult>) -> Void)
 }

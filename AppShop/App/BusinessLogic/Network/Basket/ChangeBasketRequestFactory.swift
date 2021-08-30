@@ -8,6 +8,6 @@
 import Alamofire
 
 protocol ChangeBasketRequestFactory {
-    func addToBasket(productId: Int, amount: Int, completionHandler: @escaping (AFDataResponse<ChangeBasketResult>) -> Void)
-    func delFromBasket(productId: Int, amount: Int, completionHandler: @escaping (AFDataResponse<ChangeBasketResult>) -> Void)
+    func addToBasket(productId: Int, amount: Int, completionHandler: @escaping (AFDataResponse<OperationResult>) -> Void)
+    func delFromBasket(productId: Int, amount: Int, completionHandler: @escaping (AFDataResponse<OperationResult>) -> Void)
 }
