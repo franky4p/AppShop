@@ -31,6 +31,11 @@
 		FA8AA69A26DCE052004D9BAD /* PayBasketRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AA69926DCE052004D9BAD /* PayBasketRequestFactory.swift */; };
 		FA8AA69E26DCE418004D9BAD /* PayBasketTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AA69D26DCE418004D9BAD /* PayBasketTest.swift */; };
 		FA8AA6A026DCE6BB004D9BAD /* OperationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AA69F26DCE6BB004D9BAD /* OperationResult.swift */; };
+		FA8AA6A226E8C524004D9BAD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AA6A126E8C524004D9BAD /* LoginViewController.swift */; };
+		FA8AA6A426E8C53E004D9BAD /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AA6A326E8C53E004D9BAD /* RegistrationViewController.swift */; };
+		FA8AA6A626E8C584004D9BAD /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AA6A526E8C584004D9BAD /* UserViewController.swift */; };
+		FA8AA6A926E8C632004D9BAD /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AA6A826E8C632004D9BAD /* UIView+.swift */; };
+		FA8AA6AB26E8C6E4004D9BAD /* FactoryUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AA6AA26E8C6E4004D9BAD /* FactoryUI.swift */; };
 		FAA4358F26A81ED6002C1340 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4358E26A81ED6002C1340 /* AppDelegate.swift */; };
 		FAA4359126A81ED6002C1340 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4359026A81ED6002C1340 /* SceneDelegate.swift */; };
 		FAA4359826A81ED8002C1340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA4359726A81ED8002C1340 /* Assets.xcassets */; };
@@ -96,6 +101,11 @@
 		FA8AA69926DCE052004D9BAD /* PayBasketRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayBasketRequestFactory.swift; sourceTree = "<group>"; };
 		FA8AA69D26DCE418004D9BAD /* PayBasketTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayBasketTest.swift; sourceTree = "<group>"; };
 		FA8AA69F26DCE6BB004D9BAD /* OperationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationResult.swift; sourceTree = "<group>"; };
+		FA8AA6A126E8C524004D9BAD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FA8AA6A326E8C53E004D9BAD /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		FA8AA6A526E8C584004D9BAD /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		FA8AA6A826E8C632004D9BAD /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		FA8AA6AA26E8C6E4004D9BAD /* FactoryUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryUI.swift; sourceTree = "<group>"; };
 		FAA4358B26A81ED6002C1340 /* AppShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA4358E26A81ED6002C1340 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA4359026A81ED6002C1340 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -210,6 +220,14 @@
 			path = Basket;
 			sourceTree = "<group>";
 		};
+		FA8AA6A726E8C5DF004D9BAD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA8AA6A826E8C632004D9BAD /* UIView+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		FAA4358226A81ED6002C1340 = {
 			isa = PBXGroup;
 			children = (
@@ -311,6 +329,10 @@
 		FAA435CD26A954B2002C1340 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				FA8AA6A726E8C5DF004D9BAD /* Extensions */,
+				FA8AA6A126E8C524004D9BAD /* LoginViewController.swift */,
+				FA8AA6A326E8C53E004D9BAD /* RegistrationViewController.swift */,
+				FA8AA6A526E8C584004D9BAD /* UserViewController.swift */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -319,6 +341,7 @@
 			isa = PBXGroup;
 			children = (
 				FAEFEDA626AEC25B00F6EEBA /* Network */,
+				FA8AA6AA26E8C6E4004D9BAD /* FactoryUI.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -502,9 +525,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA2BD28526BABBD7002C54D5 /* ProductRequestFactory.swift in Sources */,
+				FA8AA6A626E8C584004D9BAD /* UserViewController.swift in Sources */,
 				FA2BD28726BABCB9002C54D5 /* GetProduct.swift in Sources */,
 				FA72F39126CE93B2001C5019 /* Settings.swift in Sources */,
 				FAEFEDCB26AEE02200F6EEBA /* ChangeUserData.swift in Sources */,
+				FA8AA6A426E8C53E004D9BAD /* RegistrationViewController.swift in Sources */,
 				FAEFEDB926AEC48D00F6EEBA /* AbstractRequestFactory.swift in Sources */,
 				FAEFEDAF26AEC3E500F6EEBA /* LoginResult.swift in Sources */,
 				FA8AA69426DCD9FE004D9BAD /* ChangeBasket.swift in Sources */,
@@ -517,12 +542,14 @@
 				FA72F39B26CFD7A8001C5019 /* ListReviewRequestFactory.swift in Sources */,
 				FAEFEDAC26AEC37F00F6EEBA /* RequestFactory.swift in Sources */,
 				FAA4359126A81ED6002C1340 /* SceneDelegate.swift in Sources */,
+				FA8AA6AB26E8C6E4004D9BAD /* FactoryUI.swift in Sources */,
 				FA8AA69A26DCE052004D9BAD /* PayBasketRequestFactory.swift in Sources */,
 				FAEFEDBD26AED2E800F6EEBA /* Registration.swift in Sources */,
 				FA72F39926CFD4AE001C5019 /* ChangeReview.swift in Sources */,
 				FA2BD27D26B94BE8002C54D5 /* ListProducts.swift in Sources */,
 				FA72F39726CFD37B001C5019 /* ChangeReviewRequestFactory.swift in Sources */,
 				FAEFEDB526AEC43100F6EEBA /* ErrorParser.swift in Sources */,
+				FA8AA6A926E8C632004D9BAD /* UIView+.swift in Sources */,
 				FA8AA6A026DCE6BB004D9BAD /* OperationResult.swift in Sources */,
 				FAEFEDA826AEC34900F6EEBA /* AuthRequestFactory.swift in Sources */,
 				FA8AA69826DCDFE3004D9BAD /* PayBasket.swift in Sources */,
@@ -531,6 +558,7 @@
 				FA72F39D26CFD872001C5019 /* ListReview.swift in Sources */,
 				FAEFEDBB26AEC4AC00F6EEBA /* RequestRouter.swift in Sources */,
 				FAEFEDAA26AEC36300F6EEBA /* Auth.swift in Sources */,
+				FA8AA6A226E8C524004D9BAD /* LoginViewController.swift in Sources */,
 				FAEFEDB126AEC3F700F6EEBA /* User.swift in Sources */,
 				FAEFEDBF26AED3D600F6EEBA /* RegistrationRequestFactory.swift in Sources */,
 				FAEFEDB326AEC41E00F6EEBA /* AbstractErrorParser.swift in Sources */,
