@@ -7,29 +7,29 @@
 
 import UIKit
 
-class RegistrationViewController: UIViewController {
+class UserDataViewController: UIViewController {
 
     private let loginLabel : UILabel = {
         let label = FactoryUI.createLabel()
-        label.text = "Login:"
+        label.text = NSLocalizedString("Логин:", comment: "")
         return label
     }()
     
     private let paswrdLabel : UILabel = {
         let label = FactoryUI.createLabel()
-        label.text = "Password:"
+        label.text = NSLocalizedString("Пароль:", comment: "")
         return label
     }()
     
     private let nameLabel : UILabel = {
         let label = FactoryUI.createLabel()
-        label.text = "Name:"
+        label.text = NSLocalizedString("Имя:", comment: "")
         return label
     }()
     
     private let lastNameLabel : UILabel = {
         let label = FactoryUI.createLabel()
-        label.text = "last name:"
+        label.text = NSLocalizedString("Фамилия:", comment: "")
         return label
     }()
     
@@ -51,21 +51,26 @@ class RegistrationViewController: UIViewController {
         return FactoryUI.createTextField()
     }()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         addStack(paddingTop: 150, arrangedSubviews: [loginLabel, loginField])
-        setWidthTextField(loginField)
+        FactoryUI.setWidthTextField(loginField, width: 200)
         
         addStack(paddingTop: 195, arrangedSubviews: [paswrdLabel, paswrdField])
-        setWidthTextField(paswrdField)
+        FactoryUI.setWidthTextField(paswrdField, width: 200)
         
         addStack(paddingTop: 240, arrangedSubviews: [nameLabel, nameField])
-        setWidthTextField(nameField)
+        FactoryUI.setWidthTextField(nameField, width: 200)
         
         addStack(paddingTop: 285, arrangedSubviews: [lastNameLabel, lastNameField])
-        setWidthTextField(lastNameField)
+        FactoryUI.setWidthTextField(lastNameField, width: 200)
 
+        let button = FactoryUI.createButton(view, hightY: 330)
+        button.setTitle(NSLocalizedString("Сохранить", comment: ""), for: .normal)
+        button.addTarget(self, action: #selector(saveUserData), for: .touchUpInside)
+        view.addSubview(button)
         
         self.view.backgroundColor = .yellow
     }
@@ -78,9 +83,8 @@ class RegistrationViewController: UIViewController {
         self.view.addSubview(stackView)
         stackView.anchor(top: self.view.topAnchor, left: self.view.leftAnchor, bottom: nil, right: self.view.rightAnchor, paddingTop: paddingTop, paddingLeft: 20, paddingBottom: 0, paddingRight: 20, width: 0, height: 40, enableInsets: false)
     }
-
-    private func setWidthTextField(_ field: UITextField) {
-        field.anchor(top: nil, left: nil, bottom: nil, right: nil, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 200, height: 0, enableInsets: false)
-    }
     
+    @objc func saveUserData() {
+        print("Данные сохранены")
+    }
 }
