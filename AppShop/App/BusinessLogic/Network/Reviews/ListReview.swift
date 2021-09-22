@@ -37,7 +37,7 @@ extension ListReview {
         let idProduct: Int
         var parameters: Parameters? {
             ["page_number": pageNumber,
-             "id_category": idProduct]
+             "id_product": idProduct]
         }
     }
 }

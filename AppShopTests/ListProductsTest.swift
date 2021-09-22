@@ -18,8 +18,6 @@ class ListProductsTest: XCTestCase {
         requestFactory.makeListProductsRequestFactory()
     }
 
-    //этот тест пока не пройдет, т.к. структура описаннная в документации и та
-    //что лежит в файле различаются
     func testListProducts() {
         //Given
         let pageNumber = 1

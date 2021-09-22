@@ -41,6 +41,8 @@
 		FA8AA6B126F9DC69004D9BAD /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AA6B026F9DC69004D9BAD /* TabBarController.swift */; };
 		FA8AA6B326F9DEA7004D9BAD /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AA6B226F9DEA7004D9BAD /* ProductsTableViewController.swift */; };
 		FA8AA6B526F9E22E004D9BAD /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AA6B426F9E22E004D9BAD /* ProductTableViewCell.swift */; };
+		FA8AA6B926FB4B9E004D9BAD /* ReviewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AA6B826FB4B9E004D9BAD /* ReviewsTableViewController.swift */; };
+		FA8AA6BB26FB4BDF004D9BAD /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AA6BA26FB4BDF004D9BAD /* ReviewTableViewCell.swift */; };
 		FAA4358F26A81ED6002C1340 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4358E26A81ED6002C1340 /* AppDelegate.swift */; };
 		FAA4359126A81ED6002C1340 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4359026A81ED6002C1340 /* SceneDelegate.swift */; };
 		FAA4359826A81ED8002C1340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA4359726A81ED8002C1340 /* Assets.xcassets */; };
@@ -116,6 +118,8 @@
 		FA8AA6B026F9DC69004D9BAD /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		FA8AA6B226F9DEA7004D9BAD /* ProductsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTableViewController.swift; sourceTree = "<group>"; };
 		FA8AA6B426F9E22E004D9BAD /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		FA8AA6B826FB4B9E004D9BAD /* ReviewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsTableViewController.swift; sourceTree = "<group>"; };
+		FA8AA6BA26FB4BDF004D9BAD /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
 		FAA4358B26A81ED6002C1340 /* AppShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA4358E26A81ED6002C1340 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA4359026A81ED6002C1340 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -344,6 +348,8 @@
 				FA8AA6A726E8C5DF004D9BAD /* Extensions */,
 				FA8AA6A126E8C524004D9BAD /* LoginViewController.swift */,
 				FA8AA6B226F9DEA7004D9BAD /* ProductsTableViewController.swift */,
+				FA8AA6B826FB4B9E004D9BAD /* ReviewsTableViewController.swift */,
+				FA8AA6BA26FB4BDF004D9BAD /* ReviewTableViewCell.swift */,
 				FA8AA6A326E8C53E004D9BAD /* UserDataViewController.swift */,
 				FA8AA6B426F9E22E004D9BAD /* ProductTableViewCell.swift */,
 				FA8AA6A526E8C584004D9BAD /* UserViewController.swift */,
@@ -546,6 +552,7 @@
 				FAEFEDCB26AEE02200F6EEBA /* ChangeUserData.swift in Sources */,
 				FA8AA6A426E8C53E004D9BAD /* UserDataViewController.swift in Sources */,
 				FAEFEDB926AEC48D00F6EEBA /* AbstractRequestFactory.swift in Sources */,
+				FA8AA6BB26FB4BDF004D9BAD /* ReviewTableViewCell.swift in Sources */,
 				FA8AA6B326F9DEA7004D9BAD /* ProductsTableViewController.swift in Sources */,
 				FAEFEDAF26AEC3E500F6EEBA /* LoginResult.swift in Sources */,
 				FA8AA69426DCD9FE004D9BAD /* ChangeBasket.swift in Sources */,
@@ -565,6 +572,7 @@
 				FA72F39926CFD4AE001C5019 /* ChangeReview.swift in Sources */,
 				FA2BD27D26B94BE8002C54D5 /* ListProducts.swift in Sources */,
 				FA72F39726CFD37B001C5019 /* ChangeReviewRequestFactory.swift in Sources */,
+				FA8AA6B926FB4B9E004D9BAD /* ReviewsTableViewController.swift in Sources */,
 				FA8AA6B126F9DC69004D9BAD /* TabBarController.swift in Sources */,
 				FA8AA6AD26F9C761004D9BAD /* AppSession.swift in Sources */,
 				FAEFEDB526AEC43100F6EEBA /* ErrorParser.swift in Sources */,
