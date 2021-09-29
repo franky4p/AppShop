@@ -39,6 +39,6 @@ final class FactoryUI {
     }
     
     static func setWidthTextField(_ field: UITextField, width: CGFloat) {
-        field.anchor(top: nil, left: nil, bottom: nil, right: nil, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 120, height: 0, enableInsets: false)
+        field.anchor(top: nil, left: nil, bottom: nil, right: nil, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: width, height: 0, enableInsets: false)
     }
 }

@@ -56,4 +56,23 @@ class ProductsTableViewController: UITableViewController {
         
         self.navigationController?.pushViewController(vController, animated: true)
     }
+    
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let contextItem = UIContextualAction(style: .destructive, title: "") { [weak self] (contextualAction, view, boolValue) in
+            if let currentProduct = self?.products?[indexPath.row] {
+                AppSession.shared.addToBasket(currentProduct)
+            }
+            
+            let alert  = UIAlertController(title: NSLocalizedString("Добавление", comment: ""), message: NSLocalizedString("Товар добавлен в корзину", comment: "") , preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK ", style: .default, handler: nil)
+            alert.addAction(okAction)
+            
+            self?.present(alert, animated: true, completion: nil)
+        }
+        contextItem.image = UIImage(systemName: "cart.badge.plus")
+        
+        let swipeActions = UISwipeActionsConfiguration(actions: [contextItem])
+        
+        return swipeActions
+    }
 }

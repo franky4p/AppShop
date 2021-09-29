@@ -18,6 +18,8 @@
 		FA2BD28526BABBD7002C54D5 /* ProductRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BD28426BABBD7002C54D5 /* ProductRequestFactory.swift */; };
 		FA2BD28726BABCB9002C54D5 /* GetProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BD28626BABCB9002C54D5 /* GetProduct.swift */; };
 		FA2BD28926BABE19002C54D5 /* GetProductTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BD28826BABE19002C54D5 /* GetProductTest.swift */; };
+		FA56699A2701DB4F00546AD1 /* BasketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5669992701DB4F00546AD1 /* BasketTableViewCell.swift */; };
+		FA56699F2701DBC500546AD1 /* BasketTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA56699E2701DBC500546AD1 /* BasketTableViewController.swift */; };
 		FA72F39126CE93B2001C5019 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72F39026CE93B2001C5019 /* Settings.swift */; };
 		FA72F39326CFD13C001C5019 /* ListReviewResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72F39226CFD13C001C5019 /* ListReviewResult.swift */; };
 		FA72F39726CFD37B001C5019 /* ChangeReviewRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72F39626CFD37B001C5019 /* ChangeReviewRequestFactory.swift */; };
@@ -33,7 +35,6 @@
 		FA8AA6A026DCE6BB004D9BAD /* OperationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AA69F26DCE6BB004D9BAD /* OperationResult.swift */; };
 		FA8AA6A226E8C524004D9BAD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AA6A126E8C524004D9BAD /* LoginViewController.swift */; };
 		FA8AA6A426E8C53E004D9BAD /* UserDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AA6A326E8C53E004D9BAD /* UserDataViewController.swift */; };
-		FA8AA6A626E8C584004D9BAD /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AA6A526E8C584004D9BAD /* UserViewController.swift */; };
 		FA8AA6A926E8C632004D9BAD /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AA6A826E8C632004D9BAD /* UIView+.swift */; };
 		FA8AA6AB26E8C6E4004D9BAD /* FactoryUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AA6AA26E8C6E4004D9BAD /* FactoryUI.swift */; };
 		FA8AA6AD26F9C761004D9BAD /* AppSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AA6AC26F9C761004D9BAD /* AppSession.swift */; };
@@ -95,6 +96,8 @@
 		FA2BD28426BABBD7002C54D5 /* ProductRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRequestFactory.swift; sourceTree = "<group>"; };
 		FA2BD28626BABCB9002C54D5 /* GetProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProduct.swift; sourceTree = "<group>"; };
 		FA2BD28826BABE19002C54D5 /* GetProductTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductTest.swift; sourceTree = "<group>"; };
+		FA5669992701DB4F00546AD1 /* BasketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketTableViewCell.swift; sourceTree = "<group>"; };
+		FA56699E2701DBC500546AD1 /* BasketTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketTableViewController.swift; sourceTree = "<group>"; };
 		FA72F39026CE93B2001C5019 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		FA72F39226CFD13C001C5019 /* ListReviewResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReviewResult.swift; sourceTree = "<group>"; };
 		FA72F39626CFD37B001C5019 /* ChangeReviewRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeReviewRequestFactory.swift; sourceTree = "<group>"; };
@@ -110,7 +113,6 @@
 		FA8AA69F26DCE6BB004D9BAD /* OperationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationResult.swift; sourceTree = "<group>"; };
 		FA8AA6A126E8C524004D9BAD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FA8AA6A326E8C53E004D9BAD /* UserDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataViewController.swift; sourceTree = "<group>"; };
-		FA8AA6A526E8C584004D9BAD /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		FA8AA6A826E8C632004D9BAD /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		FA8AA6AA26E8C6E4004D9BAD /* FactoryUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryUI.swift; sourceTree = "<group>"; };
 		FA8AA6AC26F9C761004D9BAD /* AppSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSession.swift; sourceTree = "<group>"; };
@@ -174,6 +176,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA56699D2701DB8800546AD1 /* Basket */ = {
+			isa = PBXGroup;
+			children = (
+				FA5669992701DB4F00546AD1 /* BasketTableViewCell.swift */,
+				FA56699E2701DBC500546AD1 /* BasketTableViewController.swift */,
+			);
+			path = Basket;
+			sourceTree = "<group>";
+		};
+		FA5669A02701DBDB00546AD1 /* Reviews */ = {
+			isa = PBXGroup;
+			children = (
+				FA8AA6BA26FB4BDF004D9BAD /* ReviewTableViewCell.swift */,
+				FA8AA6B826FB4B9E004D9BAD /* ReviewsTableViewController.swift */,
+			);
+			path = Reviews;
+			sourceTree = "<group>";
+		};
+		FA5669A12701DC1000546AD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA8AA6B426F9E22E004D9BAD /* ProductTableViewCell.swift */,
+				FA8AA6B226F9DEA7004D9BAD /* ProductsTableViewController.swift */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
 		FA72F3A026CFE093001C5019 /* Reviews */ = {
 			isa = PBXGroup;
 			children = (
@@ -347,12 +376,10 @@
 			children = (
 				FA8AA6A726E8C5DF004D9BAD /* Extensions */,
 				FA8AA6A126E8C524004D9BAD /* LoginViewController.swift */,
-				FA8AA6B226F9DEA7004D9BAD /* ProductsTableViewController.swift */,
-				FA8AA6B826FB4B9E004D9BAD /* ReviewsTableViewController.swift */,
-				FA8AA6BA26FB4BDF004D9BAD /* ReviewTableViewCell.swift */,
+				FA5669A12701DC1000546AD1 /* Products */,
+				FA5669A02701DBDB00546AD1 /* Reviews */,
 				FA8AA6A326E8C53E004D9BAD /* UserDataViewController.swift */,
-				FA8AA6B426F9E22E004D9BAD /* ProductTableViewCell.swift */,
-				FA8AA6A526E8C584004D9BAD /* UserViewController.swift */,
+				FA56699D2701DB8800546AD1 /* Basket */,
 				FA8AA6B026F9DC69004D9BAD /* TabBarController.swift */,
 			);
 			path = Flows;
@@ -546,7 +573,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA2BD28526BABBD7002C54D5 /* ProductRequestFactory.swift in Sources */,
-				FA8AA6A626E8C584004D9BAD /* UserViewController.swift in Sources */,
 				FA2BD28726BABCB9002C54D5 /* GetProduct.swift in Sources */,
 				FA72F39126CE93B2001C5019 /* Settings.swift in Sources */,
 				FAEFEDCB26AEE02200F6EEBA /* ChangeUserData.swift in Sources */,
@@ -562,10 +588,12 @@
 				FA2BD27B26B949F9002C54D5 /* ListProductsResult.swift in Sources */,
 				FA2BD28326BABA68002C54D5 /* ProductResult.swift in Sources */,
 				FA72F39326CFD13C001C5019 /* ListReviewResult.swift in Sources */,
+				FA56699A2701DB4F00546AD1 /* BasketTableViewCell.swift in Sources */,
 				FA8AA6AF26F9CB0A004D9BAD /* Button+.swift in Sources */,
 				FA72F39B26CFD7A8001C5019 /* ListReviewRequestFactory.swift in Sources */,
 				FAEFEDAC26AEC37F00F6EEBA /* RequestFactory.swift in Sources */,
 				FAA4359126A81ED6002C1340 /* SceneDelegate.swift in Sources */,
+				FA56699F2701DBC500546AD1 /* BasketTableViewController.swift in Sources */,
 				FA8AA6AB26E8C6E4004D9BAD /* FactoryUI.swift in Sources */,
 				FA8AA69A26DCE052004D9BAD /* PayBasketRequestFactory.swift in Sources */,
 				FAEFEDBD26AED2E800F6EEBA /* Registration.swift in Sources */,

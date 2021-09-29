@@ -17,6 +17,7 @@ class LoginViewController: UIViewController {
     
     private let loginField : UITextField = {
         let field = FactoryUI.createTextField()
+        field.accessibilityIdentifier = "login"
         return field
     }()
     
@@ -29,6 +30,7 @@ class LoginViewController: UIViewController {
     private let paswrdField : UITextField = {
         let field = FactoryUI.createTextField()
         field.isSecureTextEntry = true
+        field.accessibilityIdentifier = "paswrd"
         return field
     }()
     
@@ -43,14 +45,21 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        addElementsUI()
+        view.backgroundColor = .white
+    }
+    
+    private func addElementsUI() {
+        let widthTextField = view.frame.width / 2
+        
         addStack(paddingTop: 150, arrangedSubviews: [loginLabel, loginField])
-        FactoryUI.setWidthTextField(loginField, width: 120)
+        FactoryUI.setWidthTextField(loginField, width: widthTextField)
         
         addStack(paddingTop: 195, arrangedSubviews: [paswrdLabel, paswrdField])
-        FactoryUI.setWidthTextField(paswrdField, width: 120)
+        FactoryUI.setWidthTextField(paswrdField, width: widthTextField)
         
         view.addSubview(registerLabel)
-        registerLabel.anchor(top: view.topAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 240, paddingLeft: 160, paddingBottom: 0, paddingRight: 100, width: 0, height: 40, enableInsets: false)
+        registerLabel.anchor(top: view.topAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 240, paddingLeft: 100, paddingBottom: 0, paddingRight: 100, width: 0, height: 40, enableInsets: false)
         let tap = UITapGestureRecognizer(target: self, action: #selector(onClicRegisterLabel))
         registerLabel.addGestureRecognizer(tap)
         
@@ -58,8 +67,6 @@ class LoginViewController: UIViewController {
         button.setTitle(NSLocalizedString("Войти", comment: ""), for: .normal)
         button.addTarget(self, action: #selector(login), for: .touchUpInside)
         view.addSubview(button)
-        
-        view.backgroundColor = .yellow
     }
     
     private func addStack(paddingTop: CGFloat, arrangedSubviews: Array<UIView>) {
@@ -68,12 +75,12 @@ class LoginViewController: UIViewController {
         stackView.axis = .horizontal
         stackView.spacing = 2
         view.addSubview(stackView)
-        stackView.anchor(top: view.topAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: paddingTop, paddingLeft: 100, paddingBottom: 0, paddingRight: 100, width: 0, height: 40, enableInsets: false)
+        stackView.anchor(top: view.topAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: paddingTop, paddingLeft: 30, paddingBottom: 0, paddingRight: 30, width: 0, height: 40, enableInsets: false)
     }
 
     @objc func login() {
         AppSession.shared.login(userName: loginField.text ?? "", userPassword: paswrdField.text ?? "") {
-            if (AppSession.shared.userId != nil) {
+            if (AppSession.shared.user != nil) {
                 DispatchQueue.main.async {
                     UIApplication.shared.windows.first?.rootViewController = TabBarController()
                 }

@@ -20,12 +20,13 @@ class TabBarController: UITabBarController {
         viewControllers = [
             createNavigationController(for: ProductsTableViewController(), title: NSLocalizedString("Товары", comment: ""), image: UIImage(systemName: "house")),
             createNavigationController(for: UserDataViewController(), title: NSLocalizedString("Пользователь", comment: ""), image: UIImage(systemName: "person")),
-            //createNavigationController(for: UserViewController(), title: NSLocalizedString("Vot", comment: ""), image: UIImage(systemName: "house")),
+            createNavigationController(for: BasketTableViewController(), title: NSLocalizedString("Корзина", comment: ""), image: UIImage(systemName: "cart.circle")),
         ]
     }
     
     fileprivate func createNavigationController(for rootViewController: UIViewController, title: String, image: UIImage?) -> UIViewController {
         let navController = UINavigationController(rootViewController: rootViewController)
+        navController.accessibilityLabel = "vot"
         navController.tabBarItem.title = title
         navController.tabBarItem.image = image
         navController.navigationBar.prefersLargeTitles = true
